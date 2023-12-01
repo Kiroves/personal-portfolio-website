@@ -1,0 +1,40 @@
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    color: black;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    font-size: 75px;
+    height: 35px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+@media (max-width: 455px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    .Navbar--outer {
+        gap: 0em;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .Navbar--outer {
+        gap: 0em;
+        margin-right: 10px;
+    }
+
+}

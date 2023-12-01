@@ -1,0 +1,103 @@
+.about--desc a {
+    text-decoration: underline;
+    color: inherit
+}
+
+.pfp {
+    font-size: 25px;
+}
+
+.green {
+    background-color: #99CCED;
+    color: #0f270c;
+}
+
+.blue {
+    background-color: #93acff;
+    color: #0a1e31;
+}
+
+.purple {
+    background-color: #ada2ff;
+    color: #0a1e31;
+}
+
+.about--Outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about--desc{
+    font-size: 25px;
+    width: clamp(150px, 20vw, 350px);
+    border-radius: clamp(0.5rem, 0.75vw, 2rem);
+    padding: 25px;
+    border-radius: 30px;
+    border-color: white;
+    border-style: solid;
+
+}
+.about--cards {
+    gap:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.about--desc:hover {
+    border: 3px solid black;
+
+}
+
+@media (max-width: 650px) {
+    .about--cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about--desc{
+    font-size: 25px;
+    max-width: 350px;
+    width: 50vw;
+    min-width: 150px;
+    }
+    .pfp{
+    font-size: 25px;
+    max-width: 350px;
+    width: 50vw;
+    min-width: 150px;
+    }
+}
+@media (max-width: 450px) {
+    .about--desc {
+        min-height: 100% !important;
+        aspect-ratio: 2 / 3;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .about--cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about--desc {
+        max-width: 350px;
+        width: 50vw;
+        min-width: 150px;
+    }
+    .pfp, .about--desc{
+        font-size: 20px;
+    }
+}

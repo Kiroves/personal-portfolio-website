@@ -1,0 +1,196 @@
+
+.bean {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color 1000ms;
+}
+.stack {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-bottom: 3px;
+
+}
+.stack-entry {
+    font-size: 15px;
+    padding: 5px;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+}
+.anchor {
+    display: block;
+    height: 115px;
+    /*same height as header*/
+    margin-top: -115px;
+    /*same height as header*/
+    visibility: hidden;
+}
+
+.bean:has(.card[data-color="blue"]:hover) {
+    background-color: rgb(var(--blue-rgb) / 25%);
+}
+.bean:has(.card[data-color="blue"]:hover) {
+    background-color: rgb(var(--blue-rgb) / 25%);
+}
+
+.bean:has(.card[data-color="green"]:hover) {
+    background-color: rgb(var(--green-rgb) / 25%);
+}
+
+.bean:has(.card[data-color="brown"]:hover) {
+    background-color: rgb(var(--brown-rgb) / 25%);
+}
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: scale 100ms;
+}
+
+.card .card-front-image {
+    position: relative;
+    z-index: 2;
+}
+
+.card .card-image {
+    width: clamp(300px, 20vw, 500px);
+    aspect-ratio: 3 / 2;
+    border-radius: clamp(0.5rem, 0.75vw, 2rem);
+}
+.project-title{
+    font-size: 25px;
+}
+
+.card-faders {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 30px; /* change this to adjust the card height leakage issue*/
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1500ms;
+    pointer-events: none;
+}
+
+.card:hover .card-faders {
+    opacity: 1;
+}
+
+.card:active {
+    scale: 0.98;
+}
+
+.card-fader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.card-fader:nth-child(odd) {
+    animation: fade-left 3s linear infinite;
+}
+
+.card-fader:nth-child(even) {
+    animation: fade-right 3s linear infinite;
+}
+
+.card-fader:is(:nth-child(3), :nth-child(4)) {
+    animation-delay: 750ms;
+}
+
+.card-fader:is(:nth-child(5), :nth-child(6)) {
+    animation-delay: 1500ms;
+}
+
+.card-fader:is(:nth-child(7), :nth-child(8)) {
+    animation-delay: 2250ms;
+}
+
+@media(max-width: 1200px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        padding: 4rem;
+    }
+
+    .card .card-image {
+        width: 400px;
+    }
+}
+
+@media(max-width: 600px) {
+    #cards {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card .card-image {
+        width: 100%;
+    }
+}
+@media(max-width: 405px) {
+    .stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4px;
+        margin-bottom: 3px;
+    }
+}
+
+@keyframes fade-left {
+    from {
+        scale: 1;
+        translate: 0%;
+        opacity: 1;
+    }
+
+    to {
+        scale: 0.8;
+        translate: -30%;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-right {
+    from {
+        scale: 1;
+        translate: 0%;
+        opacity: 1;
+    }
+
+    to {
+        scale: 0.8;
+        translate: 30%;
+        opacity: 0;
+    }
+}
