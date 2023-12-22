@@ -12,7 +12,7 @@ const experience = () => {
         <div className="work-grid">
           <div className="work--item work--item__full">
             <h3>University of British Columbia</h3>
-            <span>Sept 2022 - Jan 2024</span>
+            <span>Sept 2022 - Dec 2023</span>
             <hr></hr>
             <h4>Teaching Assistant</h4>
             <ul>
