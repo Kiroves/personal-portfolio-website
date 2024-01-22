@@ -29,9 +29,9 @@ const Projects = () => {
                             <div className='stack-entry'>JavaScript</div>
                             <div className='stack-entry'>Python</div>
                             <div className='stack-entry'>Flask</div>
-                            <div className='stack-entry'>HTML</div>
                         </div>
                         <div className='stack'>
+                            <div className='stack-entry'>HTML</div>
                             <div className='stack-entry'>TailwindCSS</div>
                             <div className='stack-entry'>Firebase</div>
                         </div>
