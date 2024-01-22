@@ -37,8 +37,8 @@
 .bean:has(.card[data-color="blue"]:hover) {
     background-color: rgb(var(--blue-rgb) / 25%);
 }
-.bean:has(.card[data-color="blue"]:hover) {
-    background-color: rgb(var(--blue-rgb) / 25%);
+.bean:has(.card[data-color="yellow"]:hover) {
+    background-color: rgb(var(--yellow-rgb) / 25%);
 }
 
 .bean:has(.card[data-color="green"]:hover) {
@@ -156,7 +156,7 @@
         width: 100%;
     }
 }
-@media(max-width: 405px) {
+@media(max-width: 438px) {
     .stack {
         display: flex;
         flex-direction: column;

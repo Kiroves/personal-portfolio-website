@@ -9,27 +9,30 @@ const Projects = () => {
             </div>
             <div className="bean">
                 <div id="cards">
-                    <div className="card" data-color="blue">
-                        <div className = 'project-title'>SleepCode</div>
-                        <a target="_blank" href="https://sleep-code.vercel.app/">
-                        <img className="card-front-image card-image" src="./sleepcode.png" />
+                    <div className="card" data-color="yellow">
+                        <div className='project-title'>BThere</div>
+                        <a target="_blank" href="https://github.com/Kiroves/BThere">
+                            <img className="card-front-image card-image" src="./bthere.png" alt="BThere" />
                         </a>
                         <div className="card-faders">
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                            <img className="card-fader card-image" src="./sleepcode.png" />
-                        </div>
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />                           
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />
+                            <img className="card-fader card-image" src="./bthere.png" alt="bthere" />                    
+                            </div>
                         <div className='stack'>
                             <div className='stack-entry'>React</div>
-                            <div className='stack-entry'>TypeScript</div>
-                            <div className='stack-entry'>TailwindCSS</div>
+                            <div className='stack-entry'>JavaScript</div>
+                            <div className='stack-entry'>Python</div>
+                            <div className='stack-entry'>Flask</div>
+                            <div className='stack-entry'>HTML</div>
                         </div>
                         <div className='stack'>
+                            <div className='stack-entry'>TailwindCSS</div>
                             <div className='stack-entry'>Firebase</div>
                         </div>
                     </div>
@@ -60,28 +63,28 @@ const Projects = () => {
                     </div>
                 </div>
                 <div id="cards">
-                    <div className="card" data-color="green">
-                        <div className='project-title'>UBC-OCEAN</div>
-                        <img className="card-front-image card-image" src="./ocean.png" />
+                    <div className="card" data-color="blue">
+                        <div className='project-title'>SleepCode</div>
+                        <a target="_blank" href="https://sleep-code.vercel.app/">
+                            <img className="card-front-image card-image" src="./sleepcode.png" />
+                        </a>
                         <div className="card-faders">
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
-                            <img className="card-fader card-image" src="./ocean.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
+                            <img className="card-fader card-image" src="./sleepcode.png" />
                         </div>
                         <div className='stack'>
-                            <div className='stack-entry'>Python</div>
-                            <div className='stack-entry'>Jupyter</div>
-                            <div className='stack-entry'>Pandas</div>
-                            <div className='stack-entry'>Scikit-learn</div>
-                            
+                            <div className='stack-entry'>React</div>
+                            <div className='stack-entry'>TypeScript</div>
+                            <div className='stack-entry'>TailwindCSS</div>
                         </div>
                         <div className='stack'>
-                            <div className='stack-entry'>OpenCV</div>
+                            <div className='stack-entry'>Firebase</div>
                         </div>
                     </div>
                     <div className="card" data-color="brown">

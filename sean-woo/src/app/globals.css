@@ -1,6 +1,7 @@
 :root {
     --blue-rgb: 92 192 249;
-    --green-rgb: 125 161 35;
+    --yellow-rgb: 144 161 35;
+    --green-rgb: 64 161 35;
     --brown-rgb: 127 46 23;
     scroll-behavior: smooth;
     background-image: linear-gradient(to bottom right, #75b8ba, #fda172);
