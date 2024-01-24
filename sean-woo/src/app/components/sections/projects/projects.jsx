@@ -11,7 +11,7 @@ const Projects = () => {
                 <div id="cards">
                     <div className="card" data-color="yellow">
                         <div className='project-title'>BThere</div>
-                        <a target="_blank" href="https://github.com/Kiroves/BThere">
+                        <a target="_blank" href="https://devpost.com/software/bthere-hobi6k">
                             <img className="card-front-image card-image" src="./bthere.png" alt="BThere" />
                         </a>
                         <div className="card-faders">
@@ -38,7 +38,7 @@ const Projects = () => {
                     </div>
                     <div className="card" data-color="green">
                         <div className='project-title'>EcoGlo</div>
-                        <a target="_blank" href="https://github.com/Kiroves/EcoGlo">
+                        <a target="_blank" href="https://devpost.com/software/ecoglo">
                         <img className="card-front-image card-image" src="./ecoglo.png" alt="Ecoglo" /> 
                         </a>
                         <div className="card-faders">
